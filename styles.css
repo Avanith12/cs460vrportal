@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  background: #000;
+  color: #fff;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.wrap {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 28px 16px 20px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.src {
+  color: #3ee6ff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.examples {
+  display: block;
+  width: min(352px, 100%);
+  height: auto;
+  margin-top: 16px;
+}
+
+.controls {
+  width: min(640px, 100%);
+  height: auto;
+  border-radius: 8px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 22px;
+}
+
+.card {
+  width: min(320px, 100%);
+  border: 3px solid #3a3a3a;
+  background: #1a1a1a;
+  color: #fff;
+  text-decoration: none;
+}
+
+.card:hover,
+.card:focus-visible {
+  border-color: #3d9bff;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 400 / 250;
+  object-fit: cover;
+  background: #111;
+}
+
+.card span {
+  display: block;
+  background: #2a2a2a;
+  padding: 12px;
+  font-family: ui-monospace, Menlo, Consolas, monospace;
+}
+
+.enter {
+  margin: 36px 0 8px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
+@media (max-width: 800px) {
+  .top {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
